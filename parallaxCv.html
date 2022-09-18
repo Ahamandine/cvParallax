@@ -4,42 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ParallaxBody</title>
+    <title>Amandine Ozdemir</title>
     <link rel="stylesheet" href="parallaxCv.css">
     <script src="parallaxCv.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
-<!-- TO DO create a second page to store the credit to the logo and illustration -->
 <body>
     <div class="container" id="parallax">
 
-        <div class="infos">
-            <h2 class="title">Infos</h2>
-            
+        <div class="introduction">
+
+            <div class="infos">
+                <h2 class="title">Infos</h2>
+                
                 <ul >
                     <li>Amandine Ozdemir</li>
                     <li>31 ans</li>
                     <li>Lens, Pas-de-Calais</li>
                 </ul>
-        </div>
-            <!-- IDENTITE -->
-        <div class="personal">
-            
-                <!-- <div class="picture"> -->
-                <!-- <img class="selfportrait circle" src="Screenshot 2022-07-24 at 16-33-56 Pixel Art Maker.png" alt="Vous vous demandez si c'est mon portrait craché ? Une seule solution! Contactez-moi"> -->
-                <!-- ANNONCE -->
-            <div class="annonce">
-                <h2 class="">Développeuse web et mobile</h2>
-                <p class="introduction">
-                Je suis actuellement formation 'Développement web et web mobile'.
-                Et je recherche un stage qui se déroule sur les mois de Septembre et Octobre
-                </p>
+            </div>
+                <!-- IDENTITE -->
+            <div class="personal">
+                
+                    <!-- ANNONCE -->
+                <div class="annonce">
+                    <h2 class="">Développeuse web et mobile</h2>
+                    <p class="accroche">
+                    Je suis actuellement une formation <span>'DÉVELOPPEMENT WEB ET MOBILE'</span>.
+                    Et je recherche un <span>stage</span> de deux mois qui peut commencer dès Septembre 2022
+                    </p>
+                </div>
+                <div class="divBtn">
+                    <button class="btn" id="githubBtn"><a target="_blank" href="https://github.com/Ahamandine"></a></button>
+                    <button class="btn" id="linkBtn"><a target="_blank" href="https://www.linkedin.com/in/amandine-o-943895222/"></a></button>
+                </div>
             </div>
 
-            <div class="divBtn">
-                <button class="btn" id="githubBtn" href="https://www.linkedin.com/in/amandine-o-943895222/"></button>Lien vers mon GitHub
-                <button class="btn" id="linkBtn"></button>Lien vers ma page Linkedin
-            </div>
         </div>
 
 
@@ -120,49 +120,66 @@
 
     <div class="container">
         <!-- <div class="doubleCol">-->
-        <div class="complementary">
-            <h2>Activités complémentaires</h2>
-            <p>Formation et pratique autodidacte. J'ai développé des compétences qui à mes yeux peuvent servir dans ma vie professionnelle de web développeuse</p>
-        </div>
-            <!-- GENEALOGY -->
-            <div class="genealogy">
-                <h2>Généalogie</h2>
-                <img class="materialboxed" id="moodboard1" src="genealogieMoodboard.png" data-caption="">
-                <p>bliblahblou</p>         
+        <div id="activities">
+            <div class="complementary">
+                <h2 id="activitiesTitle">Activités complémentaires</h2>
+                <p>Formation et pratique autodidacte. J'ai développé des compétences qui peuvent enrichir mes qualités de web développeuse</p>
+                <div class="twoCols">
+                    <!-- TO DO ON CLICK ON APERCOIT LE MOOD BOARD -->
+                    <!-- GENEALOGY -->
+                    <div class="genealogy">
+                        <h2>Généalogie</h2>
+                        <p class="words"><span>RECHERCHE</span> <span>MINUTIE</span> <span>PALÉOGRAPHIE</span> <span>DATA</span> <span>PERSÉVÉRANCE</span></p>         
+                    </div>
+                    <!-- BLOGGING -->
+                    <div class="blog">
+                        <h2>Rédaction web</h2>
+                        
+                        <p class="words"><span>SOURCE ANGLAISE</span> <span>RÉDACTION</span> <span>VEILLE</span> <span>SEO</span></p> 
+                </div> 
             </div>
-            <!-- BLOGGING -->
-            <div class="blog">
-                <h2>Rédaction web</h2>
-                <img class="materialboxed" id="moodboard2"src="blogMb.png" data-caption="Par ce moyen j'ai appris à chercher l'information, principalement en anglais, à restituer l'information. Pour l'occasion je me suis renseignée sur la rédaction web et le SEO pour site Wordpress"> 
-                <p>bliblahblou</p> 
-            </div> 
+
+            </div>
+
+        </div>
     </div>
 
 
     </div>
 
-    <div class="container">
+    <div class="container" id="triviaDiv">
+        <h2 class="title">Intérêts</h2>
         <div class="trivia">
-            <h2 class="title">Trivia</h2>
-            <span>
+            <div id="icons">
                 <img src="img/drapeau.png" alt="">
                 <img src="img/videogames.png" alt="">
                 <img src="img/arbre-genealogique.png" alt="">
                 <img src="img/beaux-arts.png" alt="">
                 <img src="img/livre-dhistoire.png" alt="">
                 <img src="img/lapin.png" alt="">
-            </span>
+            </div>
+            <div id="credits">
+                <div class="iconsCreditDiv">
+                    <h3 id="iconsCredit">Crédits des icônes</h3>
+                    <a target="_blank" href="https://www.flaticon.com/fr/icones-gratuites/royaume-uni" title="royaume-uni icônes">Royaume-uni icônes créées par Vitaly Gorbachev - Flaticon</a>
+                    <a target="_blank" href="https://www.flaticon.com/free-icons/videogames" title="videogames icons">Videogames icons created by Freepik - Flaticon</a>
+                    <a target="_blank" href="https://www.flaticon.com/fr/icones-gratuites/famille" title="famille icônes">Famille icônes créées par Freepik - Flaticon</a>
+                    <a target="_blank" href="https://www.flaticon.com/fr/icones-gratuites/sculpture" title="sculpture icônes">Sculpture icônes créées par ultimatearm - Flaticon</a>
+                    <a target="_blank" href="https://www.flaticon.com/fr/icones-gratuites/histoire" title="histoire icônes">Histoire icônes créées par Flat Icons - Flaticon</a>
+                    <a target="_blank" href="https://www.flaticon.com/fr/icones-gratuites/lapin" title="lapin icônes">Lapin icônes créées par Freepik - Flaticon</a>
+                </div>
+                <div class="imgCreditDiv">
+                    <h3 id="imgCredit">Crédits des images</h3>
+                    <a target="_blank" href="https://www.pexels.com/fr-fr/photo/statue-de-femme-en-robe-blanche-3713476/">
+                        <p>Michel Caicedo, 2019, Statue de Femme en Robe Blanche, Argentine (www.pexels.com)</p>
+                    </a>
+                    <a target="_blank" href="https://www.pexels.com/fr-fr/photo/photographie-en-gros-plan-de-formation-rocheuse-2646237/">
+                        <p>Dexter Fernandes, 2019, Gros Plan de Formation Rocheuse (www.pexels.com)</p>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-    
-    <footer>
-        <a href="https://www.flaticon.com/fr/icones-gratuites/royaume-uni" title="royaume-uni icônes">Royaume-uni icônes créées par Vitaly Gorbachev - Flaticon</a>
-        <a href="https://www.flaticon.com/free-icons/videogames" title="videogames icons">Videogames icons created by Freepik - Flaticon</a>
-        <a href="https://www.flaticon.com/fr/icones-gratuites/famille" title="famille icônes">Famille icônes créées par Freepik - Flaticon</a>
-        <a href="https://www.flaticon.com/fr/icones-gratuites/sculpture" title="sculpture icônes">Sculpture icônes créées par ultimatearm - Flaticon</a>
-        <a href="https://www.flaticon.com/fr/icones-gratuites/histoire" title="histoire icônes">Histoire icônes créées par Flat Icons - Flaticon</a>
-        <a href="https://www.flaticon.com/fr/icones-gratuites/lapin" title="lapin icônes">Lapin icônes créées par Freepik - Flaticon</a>
-    </footer>
 
 </body>
 </html>

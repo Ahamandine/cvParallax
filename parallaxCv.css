@@ -4,7 +4,11 @@
     border:0;
     padding:0;
     margin:0;
+    max-width: 100%;
+    max-height: 100%;
 }
+
+/* SETTING THE PARALLAX EFFECT AND CONTAINERS ASSOCIATED */
 
 #parallax, 
 .container
@@ -32,6 +36,7 @@ h2
     background: rgb(196, 191, 191);
     padding: 1rem;
     margin-bottom: 5rem;
+    text-align: center;
 
 }
 .container {
@@ -55,11 +60,7 @@ div:nth-child(3){
 
 div:nth-child(4) {
     background-color:rgb(4, 4, 32);
-    height:400px;
-}
-
-img {
-    height: 5rem;
+    height:600px;
 }
 
 .container div {
@@ -70,51 +71,73 @@ img {
     background:transparent
 }
 
-.container .infos,
-.container .annonce {
-    background-color:rgb(224, 221, 221);
-    /* background: transparent; */
-
+/* GENERAL SETTINGS */
+img {
+    height: 5rem;
 }
 
-.container .trivia {
-    /* background-color:rebeccapurple; */
-    background-size: cover;
-    background-attachment: fixed;
-    background:transparent;
-}
-
-.container2 {
-    background-color:rgb(221, 217, 217);
-    background-size: cover;
-    
-}
-
-.complementary {
-    display: flex;
-    flex-direction: column;
-    background: black;
-}
-
-h2:hover {
-    color:crimson;
-}
-
-img:hover,
-figcaption:hover {
-    background-color:rgba(245, 47, 21, 0.479)
-}
-
-figcaption {
+p{
     text-align: center;
 }
 
-.container .container2 .logo {
-    display: flex; 
-    flex-wrap: wrap;
-    background: transparent;
+div,
+li,
+p {
+    font-family:Quicksand;
+    font-size:large ;
+}
+h3 {
+    color:rgb(221, 157, 157);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+h2:hover {
+    color:rgb(90, 6, 35);
+}
+.title {
+    margin-top: 20px;
+    padding-top: 10px;
+    margin-right: 20rem;
+    margin-left: 20rem;
 }
 
+/* FIRST CONTAINER : INFORMATIONS */
+.introduction {
+    display: grid;
+    grid-template-columns: 400px 1200px;
+}
+.container .infos,
+.container .annonce {
+    background-color:rgb(196, 191, 191);
+    text-align: center;
+}
+.infos .title {
+    margin-right:0px;
+    margin-left: 0px;
+}
+.container .infos {
+    height:85%;
+}
+.container .annonce {
+    height:70%;
+}
+li {
+    list-style: none;
+}
+span {
+    font-weight: bolder;
+}
+
+span:hover{
+    color:rgb(148, 4, 52);
+}
+.divBtn {
+    display: flex;
+    justify-content: space-around;
+    padding:1rem;
+    margin-top: 2rem;
+}
 #githubBtn {
     background-image: url('GitHub-Mark-Light-64px.png');
     background-color: black;
@@ -124,7 +147,6 @@ figcaption {
     cursor:pointer;
     border:white 1px solid;
 }
-
 #linkBtn {
     background-image: url('LI-In-Bug5.png');
     background-repeat: no-repeat;
@@ -134,18 +156,126 @@ figcaption {
     cursor:pointer;
     border:white 1px solid;
 }
-
-.divBtn {
-    display: flex;
-    justify-content: space-around;
-    padding:1rem;
-    margin-top: 2rem;
-}
-
 button:hover {
-    box-shadow: 5px 5px darkmagenta;
+    box-shadow: 5px 5px rgb(158, 76, 93);
 }
 
-#moodboard2 {
-    height: 65%;
+/* TECHNOLOGIES */
+
+.container .container2 .logo {
+    display: flex; 
+    flex-wrap: wrap;
+    background: transparent;
+    justify-content: center;
+}
+figcaption {
+    text-align: center;
+    color:lightsteelblue
+}
+
+/* ASIDE ACTIVITIES AND ADDITIONAL SKILLS */
+
+#activities {
+    display: flex;
+    flex-direction: row;
+}
+
+.container #activities {
+    display: grid;
+    grid-template-rows: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.complementary {
+    display: flex;
+    flex-direction: column;
+    background: black;
+}
+
+.complementary p {
+    color:white;
+    margin-left: 15rem;
+    margin-right:15rem;
+}
+
+#activitiesTitle {
+    margin-right: 20rem;
+    margin-left: 20rem;
+}
+.twoCols {
+    display: flex;
+    flex: wrap;
+    justify-content: space-around;
+}
+.genealogy p {
+    background-image: url("geneMb.png");
+    height:11rem;
+}
+
+.blog p {
+    background: linear-gradient(transparent, rgb(1, 1, 12)), url("Screenshot\ 2022-09-14\ at\ 20-02-33\ Portrait\ de\ Steve\ Coogan\ –\ L’observateur\ obsessionnel.png");
+    height:11rem;
+}
+.genealogy p {
+    background: linear-gradient(transparent, rgb(1, 1, 12)), url("geneMb.png");
+}
+.genealogy p span,
+.blog p span {
+    background-color:transparent;
+    border: solid 5px rgb(214, 214, 214);
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    font-size: large;
+    color: white;
+    /* color:rgb(175, 161, 99); */
+    text-shadow: rgb(4, 12, 131) 3px 0 15px;
+}
+.words {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+}
+
+
+/* TRIVIA */
+
+#triviaDiv {
+    display: grid;
+    grid-template-rows: 2;
+}
+
+.container .trivia {
+    background-size: cover;
+    background-attachment: fixed;
+    background:transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.trivia,
+#credits {
+    display: flex;
+    flex-direction:column;
+}
+
+#credits {
+    padding-top: -6rem;
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: row;
+}
+.iconsCreditDiv,
+.imgCreditDiv {
+    display: flex;
+    flex-direction: column;
+}
+#iconsCredit {
+    margin-top: 5px;
+}
+
+#icons {
+    display:flex;
+    justify-content: space-evenly;
 }
