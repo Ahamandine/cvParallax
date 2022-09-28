@@ -258,21 +258,18 @@ figcaption {
 }
 
 .blog p {
-    /* background: linear-gradient(transparent, rgb(1, 1, 12)), url("Screenshot\ 2022-09-14\ at\ 20-02-33\ Portrait\ de\ Steve\ Coogan\ –\ L’observateur\ obsessionnel.png"); */
-    background: transparent rgba(0, 0, 0, 0.459), url("Screenshot\ 2022-09-14\ at\ 20-02-33\ Portrait\ de\ Steve\ Coogan\ –\ L’observateur\ obsessionnel.png");
+    background-image: url("Screenshot\ 2022-09-14\ at\ 20-02-33\ Portrait\ de\ Steve\ Coogan\ –\ L’observateur\ obsessionnel.png");
     height:11rem;
 }
 .genealogy p span,
 .blog p span {
-    background-color:transparent;
+    background-color:rgba(5, 5, 5, 0.459);
     border: solid 5px rgb(214, 214, 214);
     padding: 10px;
     margin: 5px;
     text-align: center;
     font-size: large;
-    color: white;
-    /* color:rgb(175, 161, 99); */
-    text-shadow: rgb(4, 12, 131) 3px 0 15px;
+    color: rgb(252, 246, 246);
 }
 .words {
     display: grid;
